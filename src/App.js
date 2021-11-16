@@ -1,11 +1,12 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
+import AddItemForm from './components/AddItemForm';
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen</p>
+      <h1>Task List</h1>
+      <AddItemForm />
     </div>
   );
 }
