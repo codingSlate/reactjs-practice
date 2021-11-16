@@ -8,7 +8,7 @@ const Form = (props) => {
     const getItems = {
       itemName: item.itemName,
     };
-    props.showName(getItems);
+    props.onAddItem(getItems);
   };
 
   const taskNameHandler = (e) => {
