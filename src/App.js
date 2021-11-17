@@ -7,13 +7,13 @@ const taskList = [];
 export default function App() {
   const [task, setTask] = useState(taskList);
   const getItemHandler = (data) => {
-    task.push(data);
+    // task.push(data);
     // console.log(task);
     setTask((prevState) => {
       return [data, ...task];
     });
   };
-  // console.log(task);
+
 
   return (
     <div>
