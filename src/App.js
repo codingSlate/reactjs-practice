@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import './style.css';
 import AddItemForm from './components/AddItemForm';
 import ShowItemList from './components/ShowItemList';
-const taskList = [];
+const taskList = [
+  { itemName: "Kunal"},
+  { itemName: "Ravi"},
+];
 
 export default function App() {
   const [task, setTask] = useState(taskList);

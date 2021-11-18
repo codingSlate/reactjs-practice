@@ -7,13 +7,13 @@ const ShowItemList = (props) => {
     return <div clssName="center">No data found</div>;
   }
   return (
-    <ul clssName="nostyle">
+    <ul className="nostyle">
       {props.task.map((t, index) => (
         <li className="li" key={index}>
-          <span>#{index} </span>
-          {t.itemName}
-          <span>Edit</span>
-          <span>Delete</span>
+          <div className="flexitem1">#{index+1} </div>
+          <div className="flexitem2">{t.itemName}</div>
+          <button type="button" className="btn flexitem3">Edit</button >
+          <button type="button" className="btn flexitem4">Delete</button >
         </li>
       ))}
     </ul>

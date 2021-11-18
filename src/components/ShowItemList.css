@@ -6,6 +6,28 @@ ul.nostyle {
   margin: 0;
   padding: 0;
 }
-li{
+li {
   list-style: none;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+ul li:nth-child(odd) {
+  background-color: rgb(238, 238, 238);
+}
+
+.flexitem1,
+.flexitem2 {
+  justify-self: flex-start;
+}
+.flexitem2 {
+  padding: 0 15px;
+}
+/*
+.flexitem3,
+.flexitem4 {
+} */
+.flexitem3 {
+  margin-left: auto;
 }
