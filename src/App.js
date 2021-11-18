@@ -16,7 +16,12 @@ export default function App() {
       return [data, ...task];
     });
   };
-
+const ClickDeleteHandler=(data)=>{
+  console.log(data)
+}
+const ClickEditHandler=(data)=>{
+  console.log(data)
+}
 
   return (
     <div>
@@ -27,7 +32,10 @@ export default function App() {
         <div key={index}>{m.itemName}</div>;
       })}
 
-      <ShowItemList task={task} />
+      <ShowItemList 
+      task={task} 
+      onClickDelete={ClickDeleteHandler}
+      onClickEdit={ClickEditHandler} />
     </div>
   );
 }
